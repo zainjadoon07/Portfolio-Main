@@ -36,15 +36,77 @@ useEffect(()=>{
 
   })
 
+  // Animate blobs (slow floating)
+gsap.to(".blob", {
+  x: () => gsap.utils.random(-80, 80),
+  y: () => gsap.utils.random(-80, 80),
+  duration: () => gsap.utils.random(6, 12),
+  repeat: -1,
+  yoyo: true,
+  ease: "sine.inOut"
+});
+
+// Twinkling stars
+gsap.to(".star", {
+  opacity: () => gsap.utils.random(0.05, 0.4),
+  duration: () => gsap.utils.random(1, 3),
+  repeat: -1,
+  yoyo: true,
+  stagger: { amount: 4 },
+  ease: "power1.inOut"
+});
+
+// Floating icons
+gsap.to(".icon", {
+  y: () => gsap.utils.random(-40, 40),
+  x: () => gsap.utils.random(-40, 40),
+  rotate: () => gsap.utils.random(-15, 15),
+  duration: 5,
+  repeat: -1,
+  yoyo: true,
+  ease: "sine.inOut",
+});
+
+
 },[])
 
 
   return (
-    <div className="bg-neutral-950 min-h-screen text-neutral-100 flex flex-col pt-16 font-inter overflow-x-hidden">
+    <div className="bg-neutral-950 min-h-screen text-neutral-100 flex flex-col pt-16 font-inter overflow-x-hidden relative">
+      {/* BACKGROUND FLOATING EFFECTS */}
+<div className="pointer-events-none absolute inset-0 overflow-hidden z-0">
+  
+  {/* Blobs */}
+  <div className="blob bg-green-500/20 w-[350px] h-[350px] rounded-full blur-[100px] absolute top-[10%] left-[5%]" />
+  <div className="blob bg-purple-500/20 w-[300px] h-[300px] rounded-full blur-[90px] absolute bottom-[15%] right-[10%]" />
+  <div className="blob bg-blue-500/20 w-[260px] h-[260px] rounded-full blur-[70px] absolute top-[40%] right-[30%]" />
+
+  {/* Stars */}
+  {Array.from({ length: 50 }).map((_, i) => (
+    <div
+      key={i}
+      className="star absolute w-0.5 h-0.5 bg-white rounded-full opacity-20"
+      style={{
+        top: `${Math.random() * 100}%`,
+        left: `${Math.random() * 100}%`,
+      }}
+    />
+  ))}
+
+  {/* Floating Icons */}
+  <div className="icon absolute text-white/20 text-4xl top-[20%] right-[20%]">★</div>
+  <div className="icon absolute text-white/20 text-4xl bottom-[30%] left-[25%]">✦</div>
+  <div className="icon absolute text-white/20 text-3xl top-[55%] left-[55%]">✧</div>
+
+</div>
 
       {/* Name */}
-      <div className="  content text-[50px] sm:text-[80px] md:text-[110px] lg:text-[150px] flex justify-center font-bold leading-none ">
-        ZainJadoon
+      <div className=" content text-[50px] sm:text-[80px] md:text-[110px] lg:text-[150px] flex justify-center font-bold leading-none ">
+        <div className="flex relative">
+          <p>Zain Jadoon</p>
+          <p className="flex absolute text-sm bottom-0 right-7">(@ZJ) </p>
+        </div>
+        
       </div>
 
       {/* Main Content */}
