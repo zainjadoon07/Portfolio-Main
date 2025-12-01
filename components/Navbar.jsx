@@ -27,8 +27,6 @@ const Navbar = () => {
         stagger:{amount:0.7, 
           from:"random",        
         }
-
-
     })
 
 
