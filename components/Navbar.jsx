@@ -25,7 +25,6 @@ const Navbar = () => {
         duration:1,
         scale:0.5,
         stagger:{amount:0.7, 
-          from:"random",        
         }
     })
 
