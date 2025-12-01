@@ -1,5 +1,6 @@
 "use client";
 import Homepage from "@/app/Homepage";
+import About from "./About";
 import Navbar from "@/components/Navbar"
 import {gsap} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -29,6 +30,7 @@ export default function Home() {
       <main>
         <Navbar/>
         <Homepage/>
+        <About/>
       </main>
   );
 }
