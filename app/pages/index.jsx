@@ -36,15 +36,6 @@ useEffect(()=>{
 
   })
 
-  // Animate blobs (slow floating)
-gsap.to(".blob", {
-  x: () => gsap.utils.random(-80, 80),
-  y: () => gsap.utils.random(-80, 80),
-  duration: () => gsap.utils.random(6, 12),
-  repeat: -1,
-  yoyo: true,
-  ease: "sine.inOut"
-});
 
 // Twinkling stars
 gsap.to(".star", {
@@ -72,12 +63,9 @@ gsap.to(".icon", {
 
 
   return (
-    <div className="bg-neutral-950 min-h-screen text-neutral-100 flex flex-col pt-16 font-inter overflow-x-hidden relative">
+    <div className="bg-black min-h-screen text-neutral-100 flex flex-col pt-16 font-inter overflow-x-hidden relative">
       {/* BACKGROUND FLOATING EFFECTS */}
-<div className="pointer-events-none absolute inset-0 overflow-hidden z-0">
-  
-  {/* Blobs */}
-  
+<div className="pointer-events-none absolute inset-0 overflow-hidden z-0">  
 
   {/* Stars */}
   {Array.from({ length: 50 }).map((_, i) => (
@@ -111,7 +99,7 @@ gsap.to(".icon", {
       <div className=" content flex flex-col lg:flex-row justify-around items-center h-full w-full gap-10 px-6 py-12">
 
         {/* Left Text */}
-        <div className=" content w-full text-4xl sm:text-5xl md:text-6xl lg:text-6xl text-neutral-300 text-center lg:text-left">
+        <div className=" tracking-widest content w-full text-4xl sm:text-5xl md:text-6xl lg:text-6xl text-neutral-300 text-center lg:text-left">
           <p>
             Software <br />
             <strong className="content text-7xl sm:text-6xl md:text-7xl">

@@ -71,15 +71,18 @@ const Navbar = () => {
 
           {/* Links - Center (Desktop) */}
           <div className="hidden md:flex gap-6 lg:gap-10 absolute left-1/2 -translate-x-1/2">
-            <Link className="nav  hover:opacity-85 transition-opacity" href="/">Home</Link>
-            <Link className="nav  hover:opacity-85 transition-opacity" href="/about">About</Link>
-            <Link className="nav  hover:opacity-85 transition-opacity" href="/journey">Journey</Link>
-            <Link className="nav  hover:opacity-85 transition-opacity" href="/projects">Projects</Link>
+            <Link className="nav  hover:opacity-85 transition-opacity" href="#home">Home</Link>
+            <Link className="nav  hover:opacity-85 transition-opacity" href="#about">About</Link>
+            <Link className="nav  hover:opacity-85 transition-opacity" href="#skills"> Skills</Link>
+            <Link className="nav  hover:opacity-85 transition-opacity" href="#experience">Experience</Link>
+            <Link className="nav  hover:opacity-85 transition-opacity" href="#education">Education</Link>
+            <Link className="nav  hover:opacity-85 transition-opacity" href="#projects">Projects</Link>
+
           </div>
 
           {/* Contact - Right (Desktop) */}
           <div className="hidden md:block shrink-0">
-            <Link href="/contact">
+            <Link href="#contact">
               <button className="nav border rounded-2xl py-1 px-3 md:py-2 md:px-4 bg-white text-neutral-900 font-medium hover:cursor-pointer hover:bg-neutral-950 hover:text-neutral-200 transition-colors ease-in-out duration-500 text-sm md:text-base">
                 Contact
               </button>

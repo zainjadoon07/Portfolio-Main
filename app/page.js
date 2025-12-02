@@ -1,13 +1,14 @@
 "use client";
-import Homepage from "@/app/Homepage";
-import About from "./About";
+import Homepage from "@/app/pages/index";
+import About from "@/app/pages/about";
 import Navbar from "@/components/Navbar"
 import {gsap} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
-import Skills from "./Skills";
-import WorkExperience from "./WorkExperience";
-import Academia from "./Academia";
+import Skills from "@/app/pages/skills";
+import WorkExperience from "@/app/pages/experience";
+import Academia from "@/app/pages/education";
+import Callback from "./Callback";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,11 +32,12 @@ export default function Home() {
   return (
       <main>
         <Navbar/>
-        <Homepage/>
-        <About/>
-        <Skills/>
-        <WorkExperience/>'
-        <Academia/>
+        <div id="home"><Homepage/></div>
+        <div id="about"><About /></div>
+        <div  id="skills"><Skills/></div>
+        <div id="experience"><WorkExperience /></div>
+        <div id="education"><Academia /></div>
+        <div><Callback /></div>
       </main>
   );
 }

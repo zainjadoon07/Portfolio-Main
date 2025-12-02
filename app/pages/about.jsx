@@ -47,7 +47,7 @@ const About = () => {
       <div className="animateabout flex text-9xl font-black pb-5">
         Software <br /> Engineering
       </div>
-      <div className="animateabout flex text-5xl w-[850px] font-mono text-zinc-500">
+      <div className="animateabout flex text-5xl w-[850px] font-black tracking-wider font-mono text-zinc-500">
         A passionate software engineer creating scalable, innovative applications that drive meaningful business outcomes.
       </div>
 
