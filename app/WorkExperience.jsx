@@ -59,7 +59,7 @@ const WorkExperience = () => {
   ];
 
   return (
-    <div className=" flex flex-col border-2 bg-white  font-inter p-20">
+    <div className=" flex flex-col bg-white  font-inter p-20">
       
       <div className="animateabout flex text-sm font-semibold text-neutral-950 pb-10">
         ( Professional Experience )

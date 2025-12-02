@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import Skills from "./Skills";
 import WorkExperience from "./WorkExperience";
+import Academia from "./Academia";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,7 +34,8 @@ export default function Home() {
         <Homepage/>
         <About/>
         <Skills/>
-        <WorkExperience/>
+        <WorkExperience/>'
+        <Academia/>
       </main>
   );
 }
