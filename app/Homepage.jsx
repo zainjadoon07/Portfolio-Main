@@ -77,9 +77,7 @@ gsap.to(".icon", {
 <div className="pointer-events-none absolute inset-0 overflow-hidden z-0">
   
   {/* Blobs */}
-  <div className="blob bg-green-500/20 w-[350px] h-[350px] rounded-full blur-[100px] absolute top-[10%] left-[5%]" />
-  <div className="blob bg-purple-500/20 w-[300px] h-[300px] rounded-full blur-[90px] absolute bottom-[15%] right-[10%]" />
-  <div className="blob bg-blue-500/20 w-[260px] h-[260px] rounded-full blur-[70px] absolute top-[40%] right-[30%]" />
+  
 
   {/* Stars */}
   {Array.from({ length: 50 }).map((_, i) => (

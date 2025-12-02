@@ -5,7 +5,8 @@ import Navbar from "@/components/Navbar"
 import {gsap} from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
-
+import Skills from "./Skills";
+import WorkExperience from "./WorkExperience";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,6 +32,8 @@ export default function Home() {
         <Navbar/>
         <Homepage/>
         <About/>
+        <Skills/>
+        <WorkExperience/>
       </main>
   );
 }

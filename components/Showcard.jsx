@@ -1,12 +1,12 @@
 import React from "react";
 
-const Showcard = ({ Heading, text }) => {
+const Showcard = ({ Heading, text ,font}) => {
 
 
   return (
     <div className=" hover:translate-x-10 transition-all ease-in-out duration-500 flex flex-col font-inter pb-6">
       {/* Heading */}
-      <div className="text-4xl font-extrabold pb-4 relative">
+      <div className={`text-4xl text-${font} font-extrabold pb-4 relative`}>
         {Heading}
        
       </div>
