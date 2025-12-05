@@ -8,26 +8,14 @@ import { useEffect } from "react";
 import Skills from "@/app/pages/skills";
 import WorkExperience from "@/app/pages/experience";
 import Academia from "@/app/pages/education";
-import Callback from "./Callback";
+import Callback from "./pages/Callback";
+import Projects from "./pages/projects";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
 
-  // useEffect(()=>{
-  //     const sections = document.querySelectorAll('.panel');
-      
-  //     sections.forEach((section) => {
-  //       ScrollTrigger.create({
-  //         trigger: section,
-  //         start: "top top",
-  //         pin: true,
-  //         pinSpacing: false,
-  //         markers: true,
-  //       });
-  //     });
 
-  //   },[]);
 
   return (
       <main>
@@ -37,7 +25,9 @@ export default function Home() {
         <div  id="skills"><Skills/></div>
         <div id="experience"><WorkExperience /></div>
         <div id="education"><Academia /></div>
+        {<div id="projects"><Projects/></div> }
         <div><Callback /></div>
       </main>
+
   );
 }

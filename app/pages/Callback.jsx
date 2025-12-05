@@ -5,7 +5,7 @@ const Callback = () => {
   return (
 
     
-    <div className='border-2 flex flex-col bg-black font-inter'>
+    <div className='border-2 flex flex-col bg-black font-inter pt-5'>
 
        
 

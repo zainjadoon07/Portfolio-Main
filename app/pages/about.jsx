@@ -17,7 +17,7 @@ const About = () => {
 
        gsap.from(elem,{
         opacity:0,
-        duration:2,
+        duration:1,
         stagger:{
           amount:0.5
         },
