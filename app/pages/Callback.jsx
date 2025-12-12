@@ -1,5 +1,6 @@
 
 import Link from "next/link";
+import { Globe, Mail } from "lucide-react";
 
 const Callback = () => {
 
@@ -28,13 +29,17 @@ const Callback = () => {
 
       <div className='animateabout p-10 flex flex-row justify-between items-center mt-7'>
 
-        <div className='text-xl text-zinc-200 border border-gray-700 bg-gray-950 flex items-center rounded-xl p-7 '>
+        <div className='text-xl text-zinc-200 border border-gray-700 bg-gray-950 flex items-center gap-3 rounded-xl p-7 '>
+          <Globe size={24} />
           ✦ Available Globally
         </div>
 
-        <div className='text-zinc-400 text-sm'>
-          Drop an email <br />
-          <strong className='text-lg text-zinc-300'>zainulabdin.atd@gmail.com</strong>
+        <div className='text-zinc-400 text-sm flex items-start gap-3'>
+          <Mail size={20} className="mt-1" />
+          <div>
+            Drop an email <br />
+            <strong className='text-lg text-zinc-300'>zainulabdin.atd@gmail.com</strong>
+          </div>
         </div>
       </div>
     </div>
