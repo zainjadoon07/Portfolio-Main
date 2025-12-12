@@ -4,7 +4,7 @@ import Logo from "@/public/logo.png"
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import {gsap} from "gsap"
+import { gsap } from "gsap"
 
 import { SplitText } from "gsap/all";
 
@@ -12,25 +12,26 @@ gsap.registerPlugin(SplitText);
 
 const Navbar = () => {
 
-  useEffect(()=>{
+  useEffect(() => {
 
-    const split=SplitText.create(".nav",{type:"chars"})
+    const split = SplitText.create(".nav", { type: "chars" })
 
 
-    gsap.from(split.chars,{
-        yPercent:"random([-30,30])",
-        rotation:("30,30"),
-        autoAlpha:0,
-        ease:"back.out",
-        duration:1,
-        scale:0.5,
-        stagger:{amount:0.7, 
-        }
+    gsap.from(split.chars, {
+      yPercent: "random([-30,30])",
+      rotation: ("30,30"),
+      autoAlpha: 0,
+      ease: "back.out",
+      duration: 1,
+      scale: 0.5,
+      stagger: {
+        amount: 0.7,
+      }
     })
 
 
 
-  },[])
+  }, [])
 
 
   const [isOpen, setIsOpen] = useState(false);
@@ -47,17 +48,17 @@ const Navbar = () => {
 
           {/* Logo - Left with 3D Animation */}
           <div className="shrink-0 group cursor-pointer">
-            <Image 
-              className="w-15 h-15 transition-transform duration-500 ease-out hover:scale-150 hover:rotate-360 transform-gpu " 
-              src={Logo} 
-              alt="Logo" 
-              width={50} 
-              height={50} 
+            <Image
+              className="w-15 h-15 transition-transform duration-500 ease-out hover:scale-150 hover:rotate-360 transform-gpu "
+              src={Logo}
+              alt="Logo"
+              width={50}
+              height={50}
             />
           </div>
 
           {/* Hamburger Menu - Mobile Only */}
-          <button 
+          <button
             onClick={toggleMenu}
             className="md:hidden z-50 p-2 hover:bg-neutral-800 rounded-lg transition-colors duration-300"
             aria-label="Toggle menu"
@@ -93,50 +94,48 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Overlay */}
-      <div 
-        className={` fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40 md:hidden transition-opacity duration-300 ${
-          isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
+      <div
+        className={` fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40 md:hidden transition-opacity duration-300 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+          }`}
         onClick={toggleMenu}
       />
 
       {/* Mobile Menu Drawer */}
-      <div 
-        className={`fixed top-0 left-0 h-full w-64 bg-neutral-950 border-r-2 border-neutral-900 z-40 md:hidden transform transition-transform duration-500 ease-in-out ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+      <div
+        className={`fixed top-0 left-0 h-full w-64 bg-neutral-950 border-r-2 border-neutral-900 z-40 md:hidden transform transition-transform duration-500 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
       >
         <div className="flex flex-col p-6 space-y-6 mt-16">
-          <Link 
-            href="/home" 
+          <Link
+            href="/home"
             className="text-neutral-200 text-lg hover:text-white hover:translate-x-2 transition-all duration-300"
             onClick={toggleMenu}
           >
             Home
           </Link>
-          <Link 
-            href="/about" 
+          <Link
+            href="/about"
             className="text-neutral-200 text-lg hover:text-white hover:translate-x-2 transition-all duration-300"
             onClick={toggleMenu}
           >
             About
           </Link>
-          <Link 
-            href="/journey" 
+          <Link
+            href="/journey"
             className="text-neutral-200 text-lg hover:text-white hover:translate-x-2 transition-all duration-300"
             onClick={toggleMenu}
           >
             Journey
           </Link>
-          <Link 
-            href="/projects" 
+          <Link
+            href="/projects"
             className="text-neutral-200 text-lg hover:text-white hover:translate-x-2 transition-all duration-300"
             onClick={toggleMenu}
           >
             Projects
           </Link>
-          <Link 
-            href="/contact"
+          <Link
+            href="#contact"
             onClick={toggleMenu}
           >
             <button className="w-full border rounded-2xl py-2 px-4 bg-white text-neutral-900 font-medium hover:bg-neutral-950 hover:text-neutral-200 transition-all duration-500 hover:scale-105">

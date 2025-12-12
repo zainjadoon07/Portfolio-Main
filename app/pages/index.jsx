@@ -88,7 +88,7 @@ gsap.to(".icon", {
 
       {/* Name */}
       <div className=" content text-[50px] sm:text-[80px] md:text-[110px] lg:text-[150px] flex justify-center font-bold leading-none ">
-        <div className="flex relative">
+        <div className="flex relative ">
           <p>Zain Jadoon</p>
           <p className="flex absolute text-sm bottom-0 right-7">(@ZJ) </p>
         </div>

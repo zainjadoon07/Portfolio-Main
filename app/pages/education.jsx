@@ -22,7 +22,7 @@ const Academia = () => {
       highlights: [
         "Focus on Physics and Mathematics",
         "Participated in Co-curricular activities such as Football , Cricket and Swimming",
-        "Graduated with distinction","Senior House Prefect","Captain Football team"
+        "Graduated with distinction", "Senior House Prefect", "Captain Football team"
       ],
     },
     {
@@ -39,8 +39,8 @@ const Academia = () => {
 
   return (
     <div className="flex flex-col font-inter bg-black p-20">
-      
-      <div className="animateabout text-sm text-zinc-400 mb-5">
+
+      <div className="animateabout text-sm text-zinc-400 mb-5 uppercase">
         (Education & Certificates)
       </div>
 
@@ -49,7 +49,7 @@ const Academia = () => {
       </div>
 
       <div className="animateabout text-zinc-400 text-3xl w-[700px]">
-        Strong Academic Background in CS with continuous learning and practical experience. 
+        Strong Academic Background in CS with continuous learning and practical experience.
         Always trying to solve problems that require critical thinking!
       </div>
 
@@ -71,15 +71,15 @@ const Academia = () => {
 
       <div className="animateabout grid-cols-2 grid text-white text-lg gap-7 p-8 mt-10 ">
 
-      <p className="border border-gray-600 p-4 rounded-2xl bg-gray-900 hover:scale-105 transition-all ease-in duration-500 ">
-        Supervised Machine Learning - (Stanford University)
-      </p>
+        <p className="border border-gray-600 p-4 rounded-2xl bg-gray-900 hover:scale-105 transition-all ease-in duration-500 ">
+          Supervised Machine Learning - (Stanford University)
+        </p>
 
-      <p className="border border-gray-600 p-4 rounded-2xl bg-gray-900 hover:scale-105 transition-all ease-in duration-500">Unsupervised Learning - (Stanford University)</p>
+        <p className="border border-gray-600 p-4 rounded-2xl bg-gray-900 hover:scale-105 transition-all ease-in duration-500">Unsupervised Learning - (Stanford University)</p>
 
-      <p className="border border-gray-600 p-4 rounded-2xl bg-gray-900 hover:scale-105 transition-all ease-in duration-500">Advanced Learning Algorithms - (Stanford University)</p>
+        <p className="border border-gray-600 p-4 rounded-2xl bg-gray-900 hover:scale-105 transition-all ease-in duration-500">Advanced Learning Algorithms - (Stanford University)</p>
 
-      <p className="border border-gray-600 p-4 rounded-2xl bg-gray-900 hover:scale-105 transition-all ease-in duration-500">Frontend Development - (Javascript Mastery)</p>
+        <p className="border border-gray-600 p-4 rounded-2xl bg-gray-900 hover:scale-105 transition-all ease-in duration-500">Frontend Development - (Javascript Mastery)</p>
       </div>
 
     </div>
