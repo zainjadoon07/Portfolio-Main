@@ -59,17 +59,17 @@ const WorkExperience = () => {
   ];
 
   return (
-    <div className=" flex flex-col bg-white  font-inter p-20">
+    <div className="flex flex-col bg-white font-inter p-6 sm:p-10 md:p-12 lg:p-20">
 
-      <div className="animateabout flex text-sm font-semibold text-neutral-950 pb-10 uppercase">
+      <div className="animateabout flex text-xs sm:text-sm font-semibold text-neutral-950 pb-6 md:pb-8 lg:pb-10 uppercase">
         ( Professional Experience )
       </div>
 
-      <div className=" animateabout flex text-9xl text-neutral-950 font-extrabold">
+      <div className="animateabout flex text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl text-neutral-950 font-extrabold leading-tight">
         Work Experience
       </div>
 
-      <div className=" text-neutral-500 text-5xl w-[800px] pl-10 pt-10">
+      <div className="text-neutral-500 text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl w-full md:w-[700px] lg:w-[800px] pl-0 md:pl-6 lg:pl-10 pt-6 md:pt-8 lg:pt-10">
         Gained hands-on experience building and improving applications while learning industry-standard practices.
       </div>
 

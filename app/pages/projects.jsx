@@ -39,11 +39,11 @@ const projects = () => {
   return (
 
     <div id='projects' className='flex relative flex-col'>
-      <div className='flex font-inter flex-col p-20 relative'>
-        <div className='animateabout text-md text-zinc-500 mb-5 uppercase'>( Projects ) </div>
-        <div className='animateabout flex text-9xl text-neutral-950 font-black tracking-wide'>Build with Me </div>
+      <div className='flex font-inter flex-col p-6 sm:p-10 md:p-12 lg:p-20 relative'>
+        <div className='animateabout text-xs sm:text-sm md:text-md text-zinc-500 mb-4 md:mb-5 uppercase'>( Projects ) </div>
+        <div className='animateabout flex text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl text-neutral-950 font-black tracking-wide leading-tight'>Build with Me </div>
 
-        <div className='animateabout text-4xl w-[600px] tracking-wide text-zinc-500 pl-5 pt-5'>
+        <div className='animateabout text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl w-full md:w-[550px] lg:w-[600px] tracking-wide text-zinc-500 pl-0 md:pl-3 lg:pl-5 pt-4 md:pt-5'>
           Build with me to make your ideas come to life. Explore my projects and see how we can collaborate to create something amazing together.
         </div>
 

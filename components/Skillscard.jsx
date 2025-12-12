@@ -55,15 +55,15 @@ const Skillscard = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="flex flex-col pl-10 w-[1100px] pt-10">
+    <div ref={containerRef} className="flex flex-col pl-0 md:pl-6 lg:pl-10 w-full md:w-[900px] lg:w-[1100px] pt-6 md:pt-8 lg:pt-10">
       {mapping.map((elem, index) => (
         <div key={index}>
           {/* TITLE */}
           <div
             onClick={() => toggle(index)}
-            className="pb-6 cursor-pointer hover:translate-x-10 transition-all duration-500 flex flex-row items-center font-inter font-black text-4xl"
+            className="pb-4 md:pb-6 cursor-pointer hover:translate-x-4 md:hover:translate-x-6 lg:hover:translate-x-10 transition-all duration-500 flex flex-row items-center font-inter font-black text-2xl sm:text-3xl md:text-4xl"
           >
-            <strong className="text-lg pr-4 text-zinc-500">
+            <strong className="text-sm sm:text-base md:text-lg pr-3 md:pr-4 text-zinc-500">
               ({index + 1 < 10 ? `0${index + 1}` : index + 1})
             </strong>
             {elem.title}
@@ -71,13 +71,12 @@ const Skillscard = () => {
 
           {/* CONTENT WITH SMOOTH ANIMATION */}
           <div
-            className={`overflow-hidden transition-all duration-700 ${
-              openIndex === index
-                ? "max-h-[1000px] opacity-100 py-5"
+            className={`overflow-hidden transition-all duration-700 ${openIndex === index
+                ? "max-h-[1000px] opacity-100 py-3 md:py-5"
                 : "max-h-0 opacity-0 py-0"
-            }`}
+              }`}
           >
-            <div className="grid grid-cols-3 gap-6 pl-3 pr-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 pl-0 md:pl-3 pr-4 md:pr-10">
               {elem.name.map((skillName, i) => (
                 <Skillcardextension
                   key={i}
@@ -89,7 +88,7 @@ const Skillscard = () => {
           </div>
 
           {/* Divider */}
-          <div className="border-b-2 border-zinc-700 w-[1100px] mt-6 mb-10"></div>
+          <div className="border-b-2 border-zinc-700 w-full md:w-[900px] lg:w-[1100px] mt-4 md:mt-6 mb-6 md:mb-10"></div>
         </div>
       ))}
     </div>

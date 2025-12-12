@@ -38,17 +38,17 @@ const Academia = () => {
   ];
 
   return (
-    <div className="flex flex-col font-inter bg-black p-20">
+    <div className="flex flex-col font-inter bg-black p-6 sm:p-10 md:p-12 lg:p-20">
 
-      <div className="animateabout text-sm text-zinc-400 mb-5 uppercase">
+      <div className="animateabout text-xs sm:text-sm text-zinc-400 mb-4 md:mb-5 uppercase">
         (Education & Certificates)
       </div>
 
-      <div className="animateabout text-9xl text-white w-[1000px] font-black mb-5">
+      <div className="animateabout text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-9xl text-white w-full lg:w-[1000px] font-black mb-4 md:mb-5 leading-tight">
         Academic Foundation
       </div>
 
-      <div className="animateabout text-zinc-400 text-3xl w-[700px]">
+      <div className="animateabout text-zinc-400 text-lg sm:text-xl md:text-2xl lg:text-3xl w-full md:w-[600px] lg:w-[700px]">
         Strong Academic Background in CS with continuous learning and practical experience.
         Always trying to solve problems that require critical thinking!
       </div>
@@ -65,13 +65,13 @@ const Academia = () => {
         />
       ))}
 
-      <div className=" animateabout text-5xl font-black text-white mt-20 ">
+      <div className="animateabout text-3xl sm:text-4xl md:text-5xl font-black text-white mt-12 md:mt-16 lg:mt-20">
         Professional Certificates
       </div>
 
-      <div className="animateabout grid-cols-2 grid text-white text-lg gap-7 p-8 mt-10 ">
+      <div className="animateabout grid grid-cols-1 sm:grid-cols-2 text-white text-base sm:text-lg gap-4 md:gap-6 lg:gap-7 p-4 md:p-6 lg:p-8 mt-6 md:mt-8 lg:mt-10">
 
-        <p className="border border-gray-600 p-4 rounded-2xl bg-gray-900 hover:scale-105 transition-all ease-in duration-500 ">
+        <p className="border border-gray-600 p-4 rounded-2xl bg-gray-900 hover:scale-105 transition-all ease-in duration-500">
           Supervised Machine Learning - (Stanford University)
         </p>
 
